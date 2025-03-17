@@ -3,4 +3,14 @@
 
 @section('content')
 <h1>Bienvenido</h1>
+
+<ul>
+    @foreach ($users as $user)
+        <li>
+            <a href="{{route('curso.show', $user->name)}}">{{$user->name}}</a>
+        </li>
+    @endforeach
+</ul>
+
+{{$users->links()}}
 @endsection

@@ -13,7 +13,7 @@ Route::controller(cursoController::class)->group(function(){
 
     Route::get('curso/create', 'create');
     
-    Route::get ('curso/{cur}', 'show');
+    Route::get ('curso/{cur}', 'show')->name('curso.show');
 
 });
 
