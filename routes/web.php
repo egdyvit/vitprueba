@@ -15,9 +15,17 @@ Route::controller(cursoController::class)->group(function(){
     
     Route::get ('curso/{cur}', 'show')->name('curso.show');
 
+    Route::post('curso', 'store')->name('curso.store');
+
+    Route::get('curso/{prueba}/edit', 'edit')->name('curso.edit');
+
+    Route::put('curso/{prueba}', 'update')->name('curso.update');
+
 });
 
 Route::controller(pruebaController::class)->group(function(){
     Route::get ('salida', 'salida');
 
 });
+
+
