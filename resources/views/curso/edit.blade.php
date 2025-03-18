@@ -11,13 +11,26 @@
 
     <br>
     <label>Nombre:
-    <input type="text" name="name" value="{{$prueba->name}}">
+    <input type="text" name="name" value="{{old('name', $prueba->name)}}">
     </label>
     <br>
+    @error('name')
+    <br>    
+    <span>({{$message}})</span>
+    <br>
+    @enderror
+
+    <br>
     <label>Descripción:
-    <textarea name="description" rows="5">{{$prueba->Description}}
+    <textarea name="description" rows="5">{{old('description', $prueba->Description)}}
     </textarea>
     </label>
+    <br>
+    @error('description')
+    <br>    
+    <span>({{$message}})</span>
+    <br>
+    @enderror
     <br>
     <button type="submit">Actualizar Formulario</button>
 </form>

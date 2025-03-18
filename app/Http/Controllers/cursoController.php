@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreCurso;
 use App\Models\curso;
 use App\Models\prueba;
 use App\Models\User;
@@ -19,13 +20,7 @@ class cursoController extends Controller
         return view('curso.create');
     }
 
-    public function store(Request $request){
-
-        $request->validate([
-            'name' => 'required',
-            'description' => 'required'
-
-        ]);
+    public function store(StoreCurso $request){
 
         $curso = new prueba();
         $curso->name = $request->name;
@@ -45,7 +40,8 @@ class cursoController extends Controller
            return view('curso.edit', compact('prueba'));
     }
 
-    public function update(Request $request, prueba $prueba){
+    public function update(StoreCurso $request, prueba $prueba){
+
         $prueba->name = $request->name;
         $prueba->Description = $request->description;
         $prueba->save();
