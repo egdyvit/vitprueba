@@ -22,11 +22,11 @@
 
     <br>
     <label>Descripción:
-    <textarea name="description" rows="5">{{old('description', $prueba->Description)}}
+    <textarea name="Description" rows="5">{{old('Description', $prueba->Description)}}
     </textarea>
     </label>
     <br>
-    @error('description')
+    @error('Description')
     <br>    
     <span>({{$message}})</span>
     <br>

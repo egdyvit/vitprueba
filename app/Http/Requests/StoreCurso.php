@@ -23,7 +23,7 @@ class StoreCurso extends FormRequest
     {
         return [
             'name' => 'required|min:3',
-            'description' => 'required'
+            'Description' => 'required'
         ];
     }
 
@@ -32,7 +32,7 @@ class StoreCurso extends FormRequest
         return[
             'name.required' => 'El nombre es requerido',
             'name.min' => 'El nombre debe tener mas de 3 caracteres',
-            'description.required' => 'La descripción es requerida'
+            'Description.required' => 'La descripción es requerida'
         ];
     }
 }

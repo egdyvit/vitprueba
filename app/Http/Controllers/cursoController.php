@@ -22,10 +22,7 @@ class cursoController extends Controller
 
     public function store(StoreCurso $request){
 
-        $curso = new prueba();
-        $curso->name = $request->name;
-        $curso->Description = $request->description;
-        $curso->save();
+        $curso = prueba::create($request->all());
 
         return redirect()->route('curso.show', $curso);
 
@@ -42,10 +39,7 @@ class cursoController extends Controller
 
     public function update(StoreCurso $request, prueba $prueba){
 
-        $prueba->name = $request->name;
-        $prueba->Description = $request->description;
-        $prueba->save();
-
+        $prueba->update($request->all());
         return redirect()->route('curso.show', $prueba);
     }
 }
