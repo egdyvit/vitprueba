@@ -31,9 +31,9 @@ class cursoController extends Controller
 
     }
 
-    public function show($cur){
-            $curl = prueba::find($cur);
-            return view('curso.show', compact('curl'));
+    public function show($prueba){
+            $curso = prueba::find($prueba);
+            return view('curso.show', compact('curso'));
     }
 
     public function edit(prueba $prueba){
@@ -47,5 +47,10 @@ class cursoController extends Controller
         $prueba->save();
 
         return redirect()->route('curso.show', $prueba);
+    }
+
+    public function destroy (prueba $prueba){
+        $prueba->delete();
+        return redirect()->route('curso.index');
     }
 }

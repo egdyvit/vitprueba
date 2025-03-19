@@ -7097,16 +7097,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.19.6",
+            "version": "15.19.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "c21c99675ac96cdce34bc503ea56e6ae6bdfcc64"
+                "reference": "7ec3d42dfbf452a8dda5ef4a03916e2248774150"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/c21c99675ac96cdce34bc503ea56e6ae6bdfcc64",
-                "reference": "c21c99675ac96cdce34bc503ea56e6ae6bdfcc64",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/7ec3d42dfbf452a8dda5ef4a03916e2248774150",
+                "reference": "7ec3d42dfbf452a8dda5ef4a03916e2248774150",
                 "shasum": ""
             },
             "require": {
@@ -7156,7 +7156,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2025-03-16T11:20:51+00:00"
+            "time": "2025-03-18T20:10:15+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -7823,16 +7823,16 @@
         },
         {
             "name": "laravel-lang/starter-kits",
-            "version": "1.3.3",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/starter-kits.git",
-                "reference": "99d0ddd80671d21d721c0930ec1d7e59c42cc01b"
+                "reference": "e6ebd7a566cf33a33b3bb3b80187fb1cafe22680"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/99d0ddd80671d21d721c0930ec1d7e59c42cc01b",
-                "reference": "99d0ddd80671d21d721c0930ec1d7e59c42cc01b",
+                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/e6ebd7a566cf33a33b3bb3b80187fb1cafe22680",
+                "reference": "e6ebd7a566cf33a33b3bb3b80187fb1cafe22680",
                 "shasum": ""
             },
             "require": {
@@ -7884,9 +7884,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/starter-kits/issues",
-                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.3"
+                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.5"
             },
-            "time": "2025-03-09T08:20:05+00:00"
+            "time": "2025-03-18T20:07:17+00:00"
         },
         {
             "name": "laravel/pail",
