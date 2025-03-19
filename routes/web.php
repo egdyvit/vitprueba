@@ -8,12 +8,12 @@ use App\Http\Controllers\pruebaController;
 Route::get('/', homeController::class);
 
 
-Route::controller(cursoController::class)->group(function(){
-    Route::get ('curso', 'index');
+/*Route::controller(cursoController::class)->group(function(){
+    Route::get ('curso', 'index')->name('curso.index');
 
     Route::get('curso/create', 'create');
     
-    Route::get ('curso/{cur}', 'show')->name('curso.show');
+    Route::get ('curso/{prueba}', 'show')->name('curso.show');
 
     Route::post('curso', 'store')->name('curso.store');
 
@@ -21,7 +21,12 @@ Route::controller(cursoController::class)->group(function(){
 
     Route::put('curso/{prueba}', 'update')->name('curso.update');
 
-});
+    Route::delete('curso/{prueba}', 'destroy')->name('curso.destroy');
+
+});*/
+
+    Route::resource('curso', cursoController::class);
+
 
 Route::controller(pruebaController::class)->group(function(){
     Route::get ('salida', 'salida');

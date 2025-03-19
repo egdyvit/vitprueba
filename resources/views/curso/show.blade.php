@@ -2,7 +2,14 @@
 @section('title', 'Mostrar')
 
 @section('content')
-<h1>El curso es: {{$curl->name}}</h1>
+<h1>El curso es: {{$curso->name}}</h1>
 <br>
-<a href="{{route('curso.edit', $curl)}}">Editar Curso</a>
+<a href="{{route('curso.edit', $curso)}}">Editar Curso</a>
+
+<form action="{{route('curso.destroy', $curso)}}" method="POST">
+    @csrf
+    @method('delete')
+    <button type="submit">Borrar Curso</button>
+</form>
+
 @endsection
