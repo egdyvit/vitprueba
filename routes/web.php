@@ -8,7 +8,7 @@ use App\Http\Controllers\pruebaController;
 Route::get('/', homeController::class);
 
 
-Route::controller(cursoController::class)->group(function(){
+/*Route::controller(cursoController::class)->group(function(){
     Route::get ('curso', 'index')->name('curso.index');
 
     Route::get('curso/create', 'create');
@@ -23,7 +23,10 @@ Route::controller(cursoController::class)->group(function(){
 
     Route::delete('curso/{prueba}', 'destroy')->name('curso.destroy');
 
-});
+});*/
+
+    Route::resource('curso', cursoController::class);
+
 
 Route::controller(pruebaController::class)->group(function(){
     Route::get ('salida', 'salida');
